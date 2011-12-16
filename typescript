@@ -1,0 +1,522 @@
+Script started on Monday 17 October 2011 12:21:01 AM IST
+]0;alankrit@alankrit-Satellite-C660: ~/work/ShoppingCartalankrit@alankrit-Satellite-C660:~/work/ShoppingCart$ ls
+[0m[01;34mapp[0m  [01;34mconfig[0m  config.ru  [01;34mdb[0m  [01;34mdoc[0m  Gemfile  Gemfile.lock  [01;34mlib[0m  [01;34mlog[0m  [01;34mnbproject[0m  [01;34mpublic[0m  Rakefile  README  [01;34mscript[0m  shopping_cart.sql  [01;34mtest[0m  [01;34mtmp[0m  typescript  [01;34mvendor[0m
+]0;alankrit@alankrit-Satellite-C660: ~/work/ShoppingCartalankrit@alankrit-Satellite-C660:~/work/ShoppingCart$ clear
+[H[2J]0;alankrit@alankrit-Satellite-C660: ~/work/ShoppingCartalankrit@alankrit-Satellite-C660:~/work/ShoppingCart$ clear
+[H[2J]0;alankrit@alankrit-Satellite-C660: ~/work/ShoppingCartalankrit@alankrit-Satellite-C660:~/work/ShoppingCart$ ls
+[0m[01;34mapp[0m  [01;34mconfig[0m  config.ru  [01;34mdb[0m  [01;34mdoc[0m  Gemfile  Gemfile.lock  [01;34mlib[0m  [01;34mlog[0m  [01;34mnbproject[0m  [01;34mpublic[0m  Rakefile  README  [01;34mscript[0m  shopping_cart.sql  [01;34mtest[0m  [01;34mtmp[0m  typescript  [01;34mvendor[0m
+]0;alankrit@alankrit-Satellite-C660: ~/work/ShoppingCartalankrit@alankrit-Satellite-C660:~/work/ShoppingCart$ l[Kclear
+[H[2J]0;alankrit@alankrit-Satellite-C660: ~/work/ShoppingCartalankrit@alankrit-Satellite-C660:~/work/ShoppingCart$ ls[K[Kls
+[0m[01;34mapp[0m  [01;34mconfig[0m  config.ru  [01;34mdb[0m  [01;34mdoc[0m  Gemfile  Gemfile.lock  [01;34mlib[0m  [01;34mlog[0m  [01;34mnbproject[0m  [01;34mpublic[0m  Rakefile  README  [01;34mscript[0m  shopping_cart.sql  [01;34mtest[0m  [01;34mtmp[0m  typescript  [01;34mvendor[0m
+]0;alankrit@alankrit-Satellite-C660: ~/work/ShoppingCartalankrit@alankrit-Satellite-C660:~/work/ShoppingCart$ clear
+[H[2J]0;alankrit@alankrit-Satellite-C660: ~/work/ShoppingCartalankrit@alankrit-Satellite-C660:~/work/ShoppingCart$ rak [Ke db:create
+WARNING: Global access to Rake DSL methods is deprecated.  Please include
+    ...  Rake::DSL into classes and modules which use the Rake DSL methods.
+WARNING: DSL method ShoppingCart::Application#task called at /usr/local/ruby/lib/ruby/gems/1.9.1/gems/railties-3.0.4/lib/rails/application.rb:214:in `initialize_tasks'
+shopping_cart already exists
+]0;alankrit@alankrit-Satellite-C660: ~/work/ShoppingCartalankrit@alankrit-Satellite-C660:~/work/ShoppingCart$ rake db:create
+WARNING: Global access to Rake DSL methods is deprecated.  Please include
+    ...  Rake::DSL into classes and modules which use the Rake DSL methods.
+WARNING: DSL method ShoppingCart::Application#task called at /usr/local/ruby/lib/ruby/gems/1.9.1/gems/railties-3.0.4/lib/rails/application.rb:214:in `initialize_tasks'
+shopping_cart_test already exists
+]0;alankrit@alankrit-Satellite-C660: ~/work/ShoppingCartalankrit@alankrit-Satellite-C660:~/work/ShoppingCart$ clear
+[H[2J]0;alankrit@alankrit-Satellite-C660: ~/work/ShoppingCartalankrit@alankrit-Satellite-C660:~/work/ShoppingCart$ rake:[K e[Kdb:cra[Keate
+WARNING: Global access to Rake DSL methods is deprecated.  Please include
+    ...  Rake::DSL into classes and modules which use the Rake DSL methods.
+WARNING: DSL method ShoppingCart::Application#task called at /usr/local/ruby/lib/ruby/gems/1.9.1/gems/railties-3.0.4/lib/rails/application.rb:214:in `initialize_tasks'
+]0;alankrit@alankrit-Satellite-C660: ~/work/ShoppingCartalankrit@alankrit-Satellite-C660:~/work/ShoppingCart$ rake db:create[9Pclearrake db:create[Krake db:create[Kra[Kake db:migrate
+WARNING: Global access to Rake DSL methods is deprecated.  Please include
+    ...  Rake::DSL into classes and modules which use the Rake DSL methods.
+WARNING: DSL method ShoppingCart::Application#task called at /usr/local/ruby/lib/ruby/gems/1.9.1/gems/railties-3.0.4/lib/rails/application.rb:214:in `initialize_tasks'
+==  CreateProducts: migrating =================================================
+-- create_table(:products)
+   -> 0.1158s
+==  CreateProducts: migrated (0.1160s) ========================================
+
+==  CreateAddresses: migrating ================================================
+-- create_table(:addresses)
+   -> 0.1199s
+==  CreateAddresses: migrated (0.1200s) =======================================
+
+==  CreateCountries: migrating ================================================
+-- create_table(:countries)
+   -> 0.1013s
+==  CreateCountries: migrated (0.1014s) =======================================
+
+==  CreateCities: migrating ===================================================
+-- create_table(:cities)
+   -> 0.1055s
+==  CreateCities: migrated (0.1056s) ==========================================
+
+==  CreateLanguages: migrating ================================================
+-- create_table(:languages)
+   -> 0.1754s
+==  CreateLanguages: migrated (0.1755s) =======================================
+
+==  CreateCurrencies: migrating ===============================================
+-- create_table(:currencies)
+   -> 0.1647s
+==  CreateCurrencies: migrated (0.1648s) ======================================
+
+]0;alankrit@alankrit-Satellite-C660: ~/work/ShoppingCartalankrit@alankrit-Satellite-C660:~/work/ShoppingCart$ raul[K[Kils s 
+=> Booting WEBrick
+=> Rails 3.0.4 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2011-10-17 00:58:24] INFO  WEBrick 1.3.1
+[2011-10-17 00:58:24] INFO  ruby 1.9.2 (2010-08-18) [x86_64-linux]
+[2011-10-17 00:58:24] INFO  WEBrick::HTTPServer#start: pid=3469 port=3000
+
+
+Started GET "/product" for 127.0.0.1 at 2011-10-17 00:58:39 +0530
+
+ActionController::RoutingError (No route matches "/product"):
+  
+
+Rendered /usr/local/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2011-10-17 00:58:42 +0530
+  Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+Rendered products/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 83ms (Views: 25.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2011-10-17 00:58:46 +0530
+  Processing by ProductsController#new as HTML
+Rendered products/_form.html.erb (72.6ms)
+Rendered products/new.html.erb within layouts/application (77.5ms)
+Completed 200 OK in 103ms (Views: 96.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2011-10-17 00:58:47 +0530
+  Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QcCmdMsbSPsz3aigHxEoOxDh4kzLTzhBt7d97jur89Y=", "product"=>{"title"=>"", "description"=>"", "image_url"=>"", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+Rendered products/_form.html.erb (5.6ms)
+Rendered products/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 26ms (Views: 11.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2011-10-17 01:03:17 +0530
+  Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QcCmdMsbSPsz3aigHxEoOxDh4kzLTzhBt7d97jur89Y=", "product"=>{"title"=>"", "description"=>"", "image_url"=>"", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+Rendered products/_form.html.erb (5.7ms)
+Rendered products/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 28ms (Views: 11.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2011-10-17 01:03:26 +0530
+  Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QcCmdMsbSPsz3aigHxEoOxDh4kzLTzhBt7d97jur89Y=", "product"=>{"title"=>"", "description"=>"", "image_url"=>"", "price"=>".001"}, "commit"=>"Create Product"}
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mROLLBACK[0m
+Rendered products/_form.html.erb (5.7ms)
+Rendered products/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 28ms (Views: 11.5ms | ActiveRecord: 0.3ms)
+^C[2011-10-17 01:06:22] INFO  going to shutdown ...
+[2011-10-17 01:06:22] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;alankrit@alankrit-Satellite-C660: ~/work/ShoppingCartalankrit@alankrit-Satellite-C660:~/work/ShoppingCart$ clear
+[H[2J]0;alankrit@alankrit-Satellite-C660: ~/work/ShoppingCartalankrit@alankrit-Satellite-C660:~/work/ShoppingCart$ clear
+[H[2J]0;alankrit@alankrit-Satellite-C660: ~/work/ShoppingCartalankrit@alankrit-Satellite-C660:~/work/ShoppingCart$ rails generate migrate[Kion add [Kcolumn [K[K[K[K[K[K[K_column [K_to [K_currenci[Ku[Kie[K[Ky
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20111016193800_add_column_to_currency.rb
+]0;alankrit@alankrit-Satellite-C660: ~/work/ShoppingCartalankrit@alankrit-Satellite-C660:~/work/ShoppingCart$ rails [K[K[K[Kke db:migrate --trace
+WARNING: Global access to Rake DSL methods is deprecated.  Please include
+    ...  Rake::DSL into classes and modules which use the Rake DSL methods.
+WARNING: DSL method ShoppingCart::Application#task called at /usr/local/ruby/lib/ruby/gems/1.9.1/gems/railties-3.0.4/lib/rails/application.rb:214:in `initialize_tasks'
+** Invoke db:migrate (first_time)
+** Invoke environment (first_time)
+** Execute environment
+** Execute db:migrate
+==  AddColumnToCurrency: migrating ============================================
+-- add_column(:currencies, :short_name, :string)
+   -> 0.3097s
+==  AddColumnToCurrency: migrated (0.3098s) ===================================
+
+** Invoke db:schema:dump (first_time)
+** Invoke environment 
+** Execute db:schema:dump
+]0;alankrit@alankrit-Satellite-C660: ~/work/ShoppingCartalankrit@alankrit-Satellite-C660:~/work/ShoppingCart$ cd  ../t[KMytonomy_Source_Code/trunk/
+]0;alankrit@alankrit-Satellite-C660: ~/work/Mytonomy_Source_Code/trunkalankrit@alankrit-Satellite-C660:~/work/Mytonomy_Source_Code/trunk$ rails s
+=> Booting WEBrick
+=> Rails 3.0.4 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2011-10-17 14:53:20] INFO  WEBrick 1.3.1
+[2011-10-17 14:53:20] INFO  ruby 1.9.2 (2010-08-18) [x86_64-linux]
+[2011-10-17 14:53:20] INFO  WEBrick::HTTPServer#start: pid=6782 port=3000
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 14:53:49 +0530
+  Processing by HomesController#index as HTML
+  [1m[36mSQL (0.8ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mVideo Load (3.7ms)[0m  SELECT videos.*, vc.name as vc_name, u.name as user_name FROM `videos` join home_page_videos as hpv on videos.id = hpv.video_id
+ join video_categories vc on hpv.video_category_id = vc.id
+ join users u on u.id = videos.user_id
+Rendered layouts/_rewards_program.html.erb (1.2ms)
+Rendered layouts/_follow_us.html.erb (0.7ms)
+Rendered layouts/_search_box.erb (1.2ms)
+Rendered layouts/_footer.erb (1.2ms)
+Rendered homes/index.html.erb within layouts/home (329.9ms)
+Completed 200 OK in 680ms (Views: 365.2ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/signup/new" for 127.0.0.1 at 2011-10-17 14:53:58 +0530
+  Processing by SignupsController#new as HTML
+Rendered shared/_name_message.html.erb (0.8ms)
+Rendered shared/_agree_terms_links.html.erb (0.5ms)
+Rendered shared/_privacy_policy_link.html.erb (0.6ms)
+Rendered layouts/_search_box.erb (1.1ms)
+Rendered layouts/_footer.erb (1.1ms)
+Rendered signups/new.html.erb within layouts/home (48.4ms)
+Completed 200 OK in 89ms (Views: 85.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for 127.0.0.1 at 2011-10-17 14:54:37 +0530
+  Processing by SignupsController#create as 
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uFPY2vFozSngYep/42nJIr37MuGZA9HGqhbvrtQ/DGQ=", "user"=>{"gender"=>"Male", "signup_as"=>"contributor", "name"=>"ran", "email"=>"ran@gmail.com", "facebook_uid"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "agree_terms"=>"1"}, "commit"=>"Let's Go"}
+WARNING: Can't mass-assign protected attributes: agree_terms
+  [1m[36mSQL (1.1ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (1.8ms)[0m  SELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('ran@gmail.com')) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('ran@gmail.com')) LIMIT 1
+  [1m[36mSubscription Load (0.5ms)[0m  [1mSELECT `subscriptions`.* FROM `subscriptions` WHERE (name = 'free trial') LIMIT 1[0m
+  [1m[35mSQL (2.0ms)[0m  describe `users`
+  [1m[36mAREL (0.6ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `password_hash`, `signup_as`, `gender`, `admin`, `super_admin`, `profile_complete`, `activation_code`, `cached_slug`, `created_at`, `updated_at`, `in_college`, `employed`, `adress`, `state`, `zip`, `dob`, `photo_file_name`, `photo_content_type`, `photo_file_size`, `photo_updated_at`, `signup_code`, `graduated`, `as_parent`, `agree_terms`, `profile_status`, `subscription_id`, `subscription_expiry_date`, `state_id`, `zipcode`, `bio_data`, `facebook_uid`, `role_id`, `career_id`) VALUES ('ran', 'ran@gmail.com', '12adf0abf8cc41480e603826f2cb06106f0879ee', 'contributor', 'Male', 0, 0, 0, 'mvvasugbfemdxqzuerpbzedhgzqdakcgynzinqagiotxukzegl', NULL, '2011-10-17 09:24:37', '2011-10-17 09:24:37', 0, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 0, 1, '2011-10-15 09:24:37', NULL, NULL, NULL, '', NULL, NULL)[0m
+  [1m[35mUser Load (1.9ms)[0m  SELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('ran@gmail.com')) AND (`users`.id <> 1239) LIMIT 1
+  [1m[36mAREL (0.6ms)[0m  [1mUPDATE `users` SET `gender` = 'Male', `signup_as` = 'contributor', `name` = 'ran', `email` = 'ran@gmail.com', `facebook_uid` = '', `password_hash` = '12adf0abf8cc41480e603826f2cb06106f0879ee', `agree_terms` = 1, `activation_code` = 'mvvasugbfemdxqzuerpbzedhgzqdakcgynzinqagiotxukzegl', `subscription_id` = 1, `subscription_expiry_date` = '2011-10-15 09:24:37', `created_at` = '2011-10-17 09:24:37', `updated_at` = '2011-10-17 09:24:37', `signup_code` = 'mvvasugbfemdxqzuerpbzedhgzqdakcgynzinqagiotxukzegl1239' WHERE `users`.`id` = 1239[0m
+[paperclip] Saving attachments.
+[paperclip] Saving attachments.
+  [1m[35mSQL (82.5ms)[0m  COMMIT
+Rendered notifier/signup.html.erb (1.1ms)
+
+Sent mail to ran@gmail.com (7197ms)
+Date: Mon, 17 Oct 2011 14:54:37 +0530
+From: noreply@mytonomy.com
+To: ran@gmail.com
+Message-ID: <4e9bf456d38c_1a7e23411e08931d@alankrit-Satellite-C660.mail>
+Subject: Mytonomy Signup Confirmation
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Dear ran,
+<br />
+<br />
+Thanks for registering on <a href="http://www.mytonomy.com" target="_blank">Mytonomy</a>. 
+<br />
+<br />
+Click on the link below to activate your account:
+<br/><br/>
+<a href="http://localhost:3000/signup/confirm/mvvasugbfemdxqzuerpbzedhgzqdakcgynzinqagiotxukzegl" target="_black">http://localhost:3000/signup/confirm/mvvasugbfemdxqzuerpbzedhgzqdakcgynzinqagiotxukzegl</a>
+<br/>
+<br/>
+We hope you enjoy the site and look forward to your feedback!
+<br/><br/>
+Thanks,
+<br/>
+The Mytonomy Team
+<br/>
+"Explore Your Tomorrow, Today"
+
+
+
+Rendered signups/create.js.erb (0.5ms)
+Completed 200 OK in 7816ms (Views: 111.6ms | ActiveRecord: 91.1ms)
+
+
+Started GET "/activate_account" for 127.0.0.1 at 2011-10-17 14:54:45 +0530
+  Processing by ActivateAccountController#index as HTML
+Rendered layouts/_search_box.erb (0.8ms)
+Rendered layouts/_footer.erb (0.8ms)
+Rendered activate_account/index.html.erb within layouts/home (8.0ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+^C[2011-10-17 14:55:08] INFO  going to shutdown ...
+[2011-10-17 14:55:08] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;alankrit@alankrit-Satellite-C660: ~/work/Mytonomy_Source_Code/trunkalankrit@alankrit-Satellite-C660:~/work/Mytonomy_Source_Code/trunk$ rails scd  ../Mytonomy_Source_Code/trunk/rails s[K
+=> Booting WEBrick
+=> Rails 3.0.4 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2011-10-17 14:55:44] INFO  WEBrick 1.3.1
+[2011-10-17 14:55:44] INFO  ruby 1.9.2 (2010-08-18) [x86_64-linux]
+[2011-10-17 14:55:44] INFO  WEBrick::HTTPServer#start: pid=6833 port=3000
+
+
+Started GET "/signup/confirm/mvvasugbfemdxqzuerpbzedhgzqdakcgynzinqagiotxukzegl" for 127.0.0.1 at 2011-10-17 14:55:48 +0530
+  Processing by SignupsController#confirm as HTML
+  Parameters: {"query"=>"mvvasugbfemdxqzuerpbzedhgzqdakcgynzinqagiotxukzegl"}
+  [1m[36mSQL (1.2ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (5.8ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`activation_code` = 'mvvasugbfemdxqzuerpbzedhgzqdakcgynzinqagiotxukzegl' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.6ms)[0m  UPDATE `users` SET `activation_code` = '', `updated_at` = '2011-10-17 09:25:48' WHERE `users`.`id` = 1239
+[paperclip] Saving attachments.
+  [1m[36mSQL (78.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 225ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 14:55:49 +0530
+  Processing by HomesController#index as HTML
+  [1m[35mSQL (1.1ms)[0m  SHOW TABLES
+  [1m[36mVideo Load (1.5ms)[0m  [1mSELECT videos.*, vc.name as vc_name, u.name as user_name FROM `videos` join home_page_videos as hpv on videos.id = hpv.video_id
+ join video_categories vc on hpv.video_category_id = vc.id
+ join users u on u.id = videos.user_id[0m
+Rendered layouts/_rewards_program.html.erb (1.1ms)
+Rendered layouts/_follow_us.html.erb (0.4ms)
+Rendered layouts/_search_box.erb (45.1ms)
+Rendered layouts/_footer.erb (0.9ms)
+Rendered homes/index.html.erb within layouts/home (266.5ms)
+Completed 200 OK in 411ms (Views: 268.9ms | ActiveRecord: 88.6ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2011-10-17 14:56:00 +0530
+  Processing by SessionsController#create as 
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uFPY2vFozSngYep/42nJIr37MuGZA9HGqhbvrtQ/DGQ=", "email"=>"ran@gmail.com", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (9.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'ran@gmail.com' LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1239 LIMIT 1[0m
+Rendered sessions/create.js.erb (2.9ms)
+Completed 200 OK in 133ms (Views: 82.9ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/profile/new" for 127.0.0.1 at 2011-10-17 14:56:01 +0530
+  Processing by ProfilesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1239 LIMIT 1
+Rendered shared/_confirmation_msg.html.erb (27.1ms)
+Rendered shared/_privacy_policy_link.html.erb (0.6ms)
+Rendered profiles/_contributor_profile.html.erb (5.2ms)
+Rendered layouts/_menu.erb (2.1ms)
+Rendered layouts/_global_search_box.erb (1.1ms)
+Rendered layouts/_notice_error.html.erb (0.7ms)
+Rendered layouts/_footer.erb (1.7ms)
+Rendered profiles/new.html.erb within layouts/application (70.9ms)
+Completed 200 OK in 112ms (Views: 103.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile/new" for 127.0.0.1 at 2011-10-17 14:56:42 +0530
+  Processing by ProfilesController#new as HTML
+  [1m[36mUser Load (3.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1239 LIMIT 1[0m
+Rendered shared/_confirmation_msg.html.erb (22.8ms)
+Rendered shared/_privacy_policy_link.html.erb (0.5ms)
+Rendered profiles/_contributor_profile.html.erb (5.2ms)
+Rendered layouts/_menu.erb (1.8ms)
+Rendered layouts/_global_search_box.erb (1.0ms)
+Rendered layouts/_notice_error.html.erb (0.6ms)
+Rendered layouts/_footer.erb (0.8ms)
+Rendered profiles/new.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 108ms (Views: 45.4ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/profile/new" for 127.0.0.1 at 2011-10-17 14:56:46 +0530
+  Processing by ProfilesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1239 LIMIT 1
+Rendered shared/_confirmation_msg.html.erb (24.1ms)
+Rendered shared/_privacy_policy_link.html.erb (0.5ms)
+Rendered profiles/_contributor_profile.html.erb (5.0ms)
+Rendered layouts/_menu.erb (1.8ms)
+Rendered layouts/_global_search_box.erb (1.1ms)
+Rendered layouts/_notice_error.html.erb (0.6ms)
+Rendered layouts/_footer.erb (0.9ms)
+Rendered profiles/new.html.erb within layouts/application (44.4ms)
+Completed 200 OK in 53ms (Views: 46.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profile/new" for 127.0.0.1 at 2011-10-17 14:57:19 +0530
+  Processing by ProfilesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1239 LIMIT 1[0m
+Rendered shared/_confirmation_msg.html.erb (25.3ms)
+Rendered shared/_privacy_policy_link.html.erb (0.6ms)
+Rendered profiles/_contributor_profile.html.erb (5.3ms)
+Rendered layouts/_menu.erb (1.8ms)
+Rendered layouts/_global_search_box.erb (1.0ms)
+Rendered layouts/_notice_error.html.erb (0.5ms)
+Rendered layouts/_footer.erb (54.5ms)
+Rendered profiles/new.html.erb within layouts/application (99.8ms)
+Completed 200 OK in 112ms (Views: 102.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profile/new" for 127.0.0.1 at 2011-10-17 14:57:51 +0530
+  Processing by ProfilesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1239 LIMIT 1
+Rendered shared/_confirmation_msg.html.erb (79.0ms)
+Rendered shared/_privacy_policy_link.html.erb (0.5ms)
+Rendered profiles/_contributor_profile.html.erb (5.3ms)
+Rendered layouts/_menu.erb (1.8ms)
+Rendered layouts/_global_search_box.erb (1.0ms)
+Rendered layouts/_notice_error.html.erb (0.5ms)
+Rendered layouts/_footer.erb (0.8ms)
+Rendered profiles/new.html.erb within layouts/application (99.1ms)
+Completed 200 OK in 108ms (Views: 101.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile/new" for 127.0.0.1 at 2011-10-17 14:58:22 +0530
+  Processing by ProfilesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1239 LIMIT 1[0m
+Rendered shared/_confirmation_msg.html.erb (23.3ms)
+Rendered shared/_privacy_policy_link.html.erb (0.5ms)
+Rendered profiles/_contributor_profile.html.erb (5.1ms)
+Rendered layouts/_menu.erb (1.8ms)
+Rendered layouts/_global_search_box.erb (1.0ms)
+Rendered layouts/_notice_error.html.erb (0.6ms)
+Rendered layouts/_footer.erb (0.9ms)
+Rendered profiles/new.html.erb within layouts/application (43.9ms)
+Completed 200 OK in 53ms (Views: 46.3ms | ActiveRecord: 0.3ms)
+^C[2011-10-17 14:59:57] INFO  going to shutdown ...
+[2011-10-17 14:59:57] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;alankrit@alankrit-Satellite-C660: ~/work/Mytonomy_Source_Code/trunkalankrit@alankrit-Satellite-C660:~/work/Mytonomy_Source_Code/trunk$ rails s
+=> Booting WEBrick
+=> Rails 3.0.4 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2011-10-17 15:00:06] INFO  WEBrick 1.3.1
+[2011-10-17 15:00:06] INFO  ruby 1.9.2 (2010-08-18) [x86_64-linux]
+[2011-10-17 15:00:06] INFO  WEBrick::HTTPServer#start: pid=6896 port=3000
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 15:00:11 +0530
+  Processing by HomesController#index as HTML
+  [1m[36mSQL (1.2ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mVideo Load (0.4ms)[0m  SELECT videos.*, vc.name as vc_name, u.name as user_name FROM `videos` join home_page_videos as hpv on videos.id = hpv.video_id
+ join video_categories vc on hpv.video_category_id = vc.id
+ join users u on u.id = videos.user_id
+Rendered layouts/_rewards_program.html.erb (1.1ms)
+Rendered layouts/_follow_us.html.erb (0.4ms)
+Rendered layouts/_search_box.erb (0.9ms)
+Rendered layouts/_footer.erb (0.8ms)
+Rendered homes/index.html.erb within layouts/home (217.4ms)
+Completed 200 OK in 409ms (Views: 219.8ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2011-10-17 15:00:21 +0530
+  Processing by SessionsController#create as 
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tt4orhaESjC0XZG6PLFQqItJt34zXyzFMpezQGwr2lU=", "email"=>"ran@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mSQL (1.1ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'ran@gmail.com' LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1239 LIMIT 1[0m
+Rendered sessions/create.js.erb (2.6ms)
+Completed 200 OK in 77ms (Views: 36.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/profile/new" for 127.0.0.1 at 2011-10-17 15:00:22 +0530
+  Processing by ProfilesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1239 LIMIT 1
+Rendered shared/_confirmation_msg.html.erb (80.3ms)
+Rendered shared/_privacy_policy_link.html.erb (0.5ms)
+Rendered profiles/_contributor_profile.html.erb (5.3ms)
+Rendered layouts/_menu.erb (1.9ms)
+Rendered layouts/_global_search_box.erb (1.0ms)
+Rendered layouts/_notice_error.html.erb (0.6ms)
+Rendered layouts/_footer.erb (0.8ms)
+Rendered profiles/new.html.erb within layouts/application (101.5ms)
+Completed 200 OK in 112ms (Views: 104.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/profile/new" for 127.0.0.1 at 2011-10-17 15:02:10 +0530
+  Processing by ProfilesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1239 LIMIT 1[0m
+Rendered shared/_confirmation_msg.html.erb (23.9ms)
+Rendered shared/_privacy_policy_link.html.erb (0.6ms)
+Rendered profiles/_contributor_profile.html.erb (5.3ms)
+Rendered layouts/_menu.erb (1.8ms)
+Rendered layouts/_global_search_box.erb (1.0ms)
+Rendered layouts/_notice_error.html.erb (0.6ms)
+Rendered layouts/_footer.erb (0.8ms)
+Rendered profiles/new.html.erb within layouts/application (44.2ms)
+Completed 200 OK in 53ms (Views: 46.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-17 15:03:57 +0530
+  Processing by HomesController#index as HTML
+  [1m[35mSQL (1.2ms)[0m  SHOW TABLES
+  [1m[36mVideo Load (0.3ms)[0m  [1mSELECT videos.*, vc.name as vc_name, u.name as user_name FROM `videos` join home_page_videos as hpv on videos.id = hpv.video_id
+ join video_categories vc on hpv.video_category_id = vc.id
+ join users u on u.id = videos.user_id[0m
+Rendered layouts/_rewards_program.html.erb (1.1ms)
+Rendered layouts/_follow_us.html.erb (0.4ms)
+Rendered layouts/_search_box.erb (0.9ms)
+Rendered layouts/_footer.erb (0.8ms)
+Rendered homes/index.html.erb within layouts/home (34.1ms)
+Completed 200 OK in 176ms (Views: 36.6ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2011-10-17 15:04:09 +0530
+  Processing by SessionsController#create as 
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7E4citgPCGJkgXOVgWisYNDQNOfz4faqkUcZoOnXN8Y=", "email"=>"ran@gmail.com", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'ran@gmail.com' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1239 LIMIT 1[0m
+Rendered sessions/create.js.erb (2.4ms)
+Completed 200 OK in 45ms (Views: 12.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profile/new" for 127.0.0.1 at 2011-10-17 15:04:09 +0530
+  Processing by ProfilesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1239 LIMIT 1
+Rendered shared/_confirmation_msg.html.erb (25.4ms)
+Rendered shared/_privacy_policy_link.html.erb (0.5ms)
+Rendered profiles/_contributor_profile.html.erb (5.0ms)
+Rendered layouts/_menu.erb (1.7ms)
+Rendered layouts/_global_search_box.erb (1.0ms)
+Rendered layouts/_notice_error.html.erb (0.5ms)
+Rendered layouts/_footer.erb (0.8ms)
+Rendered profiles/new.html.erb within layouts/application (45.1ms)
+Completed 200 OK in 54ms (Views: 47.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile/new" for 127.0.0.1 at 2011-10-17 15:05:32 +0530
+  Processing by ProfilesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1239 LIMIT 1[0m
+Rendered shared/_confirmation_msg.html.erb (24.7ms)
+Rendered shared/_privacy_policy_link.html.erb (0.5ms)
+Rendered profiles/_contributor_profile.html.erb (5.2ms)
+Rendered layouts/_menu.erb (1.7ms)
+Rendered layouts/_global_search_box.erb (1.1ms)
+Rendered layouts/_notice_error.html.erb (0.6ms)
+Rendered layouts/_footer.erb (0.8ms)
+Rendered profiles/new.html.erb within layouts/application (44.9ms)
+Completed 200 OK in 54ms (Views: 47.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile/new" for 127.0.0.1 at 2011-10-17 15:11:41 +0530
+  Processing by ProfilesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1239 LIMIT 1
+Rendered shared/_confirmation_msg.html.erb (23.9ms)
+Rendered shared/_privacy_policy_link.html.erb (0.6ms)
+Rendered profiles/_contributor_profile.html.erb (61.6ms)
+Rendered layouts/_menu.erb (1.7ms)
+Rendered layouts/_global_search_box.erb (1.0ms)
+Rendered layouts/_notice_error.html.erb (0.5ms)
+Rendered layouts/_footer.erb (0.8ms)
+Rendered profiles/new.html.erb within layouts/application (100.3ms)
+Completed 200 OK in 112ms (Views: 103.2ms | ActiveRecord: 0.2ms)
+^C[2011-10-17 17:07:01] INFO  going to shutdown ...
+[2011-10-17 17:07:01] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;alankrit@alankrit-Satellite-C660: ~/work/Mytonomy_Source_Code/trunkalankrit@alankrit-Satellite-C660:~/work/Mytonomy_Source_Code/trunk$ git clar
+git: 'clar' is not a git command. See 'git --help'.
+
+Did you mean this?
+	clean
+]0;alankrit@alankrit-Satellite-C660: ~/work/Mytonomy_Source_Code/trunkalankrit@alankrit-Satellite-C660:~/work/Mytonomy_Source_Code/trunk$ clear
+[H[2J]0;alankrit@alankrit-Satellite-C660: ~/work/Mytonomy_Source_Code/trunkalankrit@alankrit-Satellite-C660:~/work/Mytonomy_Source_Code/trunk$ git status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   public/javascripts/edit_profile.js
+#	modified:   public/javascripts/profile.js
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;alankrit@alankrit-Satellite-C660: ~/work/Mytonomy_Source_Code/trunkalankrit@alankrit-Satellite-C660:~/work/Mytonomy_Source_Code/trunk$ exit
+exit
+
+Script done on Tuesday 18 October 2011 12:02:45 AM IST

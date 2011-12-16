@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  currency: MyString
+  language: MyString
+  timezone: MyString
+
+two:
+  name: MyString
+  currency: MyString
+  language: MyString
+  timezone: MyString
